@@ -13,7 +13,7 @@ function Kalkulator() {
     const maksimalText = danaMaksimal ? 'Ya' : 'Tidak';
     const message = `Dana Pinjaman : ${dana}\nKota/Kabupaten : ${kota}\nMerk, Tipe & Tahun : ${detail}\nTenor Pembayaran : ${tenor}\nButuh Dana Maksimal : ${maksimalText}\nTerimakasih`;
     
-    const whatsappURL = `https://wa.me/6283824154821?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/62881025426135?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
 
