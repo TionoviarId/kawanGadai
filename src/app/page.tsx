@@ -1,113 +1,170 @@
+
 import Image from "next/image";
+import nama from '../../public/nama.svg'
+import logo from '../../public/logo.svg'
+import Landing from  '../../public/landing.png'
+import ceklis from  '../../public/ceklis.svg'
+import wceklis from  '../../public/wceklis.svg'
+import footer from  '../../public/footer.svg'
+import wa from  '../../public/wa.svg'
 
+import MultipleCarousel from "@/components/multipleCarousel";
+
+import Kalkulator from "@/components/kalkulator";
 export default function Home() {
+ 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className="">
+      
+    <div className="grid grid-cols-10 w-screen bg-[#3598FF] justify-center md:gap-5 pr-[20px]">
+     <div className="flex justify-center bg-[#061B3A] rounded-e-full col-span-4 md:col-span-3  py-[8px]  ">
+      <Image src={logo} alt="" width={100} height={100} className="pl-[20px] "/>
+      <Image src={nama} alt="" width={100} height={100} className="pr-[17px] w-[93px] md:w-[124px] "/>
+     </div>
+    
+      <a href="#kalkulator" className="text-center text-xs md:text-base my-auto col-span-3 md:col-span-5 md:text-end">SIMULASI</a>
+      <a href='#tentang' className="text-center text-xs md:text-base my-auto col-span-3 md:col-span-2">TENTANG KAMI</a>
+    
+    
+    </div>
+    <section className="relative w-full  bg-cover bg-center pb-24" style={{ backgroundImage: `url(${Landing.src})` }}>
+  <div className="p-[25px] md:p-[94px] z-50 relative">
+    <div className="w-7/12">
+      <h1 className="text-white font-bold text-2xl md:text-5xl break-words">PERLU DANA CEPAT?</h1>
+    </div>
+    <p className="text-[14px] md:text-3xl font-medium md:font-normal text-white mt-4 w-10/12 md:my-10">
+      Kami hadirkan solusi untuk anda dengan pinjaman dana tunai jaminan BPKB motor dan mobil dari multifinance berizin otoritas jasa keuangan (OJK) yaitu WOM Finance, Adira, FIF, BFI, Kredit Plus, dan Mega Finance.
+    </p>
+    <div className="flex flex-col w-full gap-2 md:gap-5 mt-7 font-semibold">
+      <a href="https://wa.me/62881025426135" className="bg-[#3598FF] text-center w-[180px] md:w-[324px] rounded-full px-2 py-2 text-sm md:text-2xl">AJUKAN SEKARANG</a>
+      <a href='#kalkulator'  className="bg-[#E74FA2] text-center w-[218px] md:w-[392px] rounded-full px-2 py-2 text-sm md:text-2xl">KALKULATOR PINJAMAN</a>
+    </div>
+  </div>
+</section>
+<div className="-translate-y-20 absolute w-full">
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+<svg width="w-full" height="186" viewBox="0 0 1280 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="640.5" cy="93" rx="725.5" ry="93" fill="#3598FF"/>
+</svg>
+</div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+<section id='tentang' className="bg-[#3598FF] p-8 md:p-[96px] text-center ">
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+  <h3 className="text-white font-bold mb-4 md:text-[40px]">TENTANG KAMI</h3>
+  <p className="text-white text-[14px] md:text-[32px] font-normal">
+    Kawangadai.com merupakan mitra resmi dari beberapa perusahaan finance resmi yang berlisensi OJK yaitu WOM Finance, ADIRA, FIF, BFI, Kredit Plus dan MEGA Finance. Kami dapat membantu menawarkan produk pinjaman dana tunai dengan jaminan BPKB Motor dan Mobil. Kami dapat melayani customer seJABODETABEK.
+  </p>
+  <h3 className="text-white font-bold mt-8 md:mt-[82px] mb-4 md:text-[40px]">KENAPA GADAI BPKB DI KAMI?</h3>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+  <div className="bg-white rounded-xl p-4 flex flex-col gap-3">
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Nilai pinjaman mulai dari 1 juta
+sampai 500 juta</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Rate bunga rendah</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Angsuran Ringan</p>
+  </div>
+  </div>
+  <div className="bg-white rounded-xl p-4 flex flex-col gap-3">
+
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Pajak mati bisa dibiayai tanpa potongan</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Menerima plat daerah dan KTP daerah</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Kos atau Kontrak bisa</p>
+  </div>
+  </div>
+  <div className="bg-white rounded-xl p-4 flex flex-col gap-3">
+
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Dibiayai oleh leasing berlisensi OJK</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Keamanan data terjamin</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Diproses langsung marketing resmi
+dari leasing</p>
+  </div>
+  </div>
+  <div className="bg-white rounded-xl p-4 flex flex-col gap-3">
+
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Pencairan di hari yang sama</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={ceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-[#003B8E]">Proses tanpa survey</p>
+  </div>
+  
+  </div>
+  </div>
+</section>
+<section id="kalkulator" className="bg-white p-8 md:p-[96px] border-none text-black">
+<h3 className="text-black font-bold mb-4 md:text-4xl"> KALKULATOR PINJAMAN</h3>
+<p className="text-black md:text-[32px]">Hitung dan dapatkan nilai pinjaman serta angsuran sesuai dengan kebutuhan anda!</p>
+
+<Kalkulator/>
+</section>
+<section className="bg-white p-8 md:px-[96px] text-black">
+<h3 className="text-[##003B8E] font-bold mb-4 md:mb-8 md:text-4xl">SYARAT UMUM PEMBIAYAAN</h3>
+<div className="bg-[#3598FF] rounded-xl p-4 flex flex-col gap-3">
+
+  <div className=" flex items-start gap-2">
+<Image src={wceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-white">WNI dengan usia minimal 21 tahun</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={wceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-white">Usia motor paling tua tahun 2012</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={wceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-white">Memiliki penghasilan dari bekerja
+atau Wirausaha</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={wceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-white">Motor milik sendiri, BPKB asli</p>
+  </div>
+  <div className=" flex items-start gap-2">
+<Image src={wceklis} alt="" width={100} height={100} className="w-[20px] md:w-[26px]"/>
+<p className="font-semibold text-sm md:text-2xl text-start text-white">Pajak mati diperbolehkan minimal
+5 Tahun</p>
+  </div>
+  
+  </div>
+</section>
+<section className="bg-[#3598FF] p-8 md:p-[96px] text-center">
+<h3 className="text-white font-bold mb-4 md:text-4xl">TESTIMONI</h3>
+<MultipleCarousel/>
+</section>
+<section className="bg-[#062045] w-full p-8 md:p-[96px] flex flex-col items-center">
+<Image src={footer} alt="" width={1000} height={1000} className="w-[120px] md:w-[277px]"/>
+<p className="text-center text-xs md:text-2xl mb-5 md:w-10/12">Ruko Oregon TCR No 32, Jl. Raya Kota Wisata, Ciangsana, Gn Putri, Kab. bogor, KAB. BOGOR, GUNUNG PUTRI, JAWA BARAT, ID, 16968</p>
+<a href="https://wa.me/62881025426135"  className="bg-white rounded-full flex px-2 text-green-500 text-xs font-semibold py-1 items-center"><span><Image src={wa} alt="" width={100} height={100} className="w-[29px]"/></span>Hubungi kami</a>
+</section>
+<section className="bg-black text-center p-1 text-[10px]  font-normal">
+  <p>2024 Kawan Gadai</p>
+</section>
+    </div>
   );
 }
