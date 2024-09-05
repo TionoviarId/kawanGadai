@@ -11,7 +11,7 @@ function Kalkulator() {
 
   const handleSubmit = () => {
     const maksimalText = danaMaksimal ? 'Ya' : 'Tidak';
-    const message = `Dana yang dibutuhkan: ${dana}\nKota/Kabupaten: ${kota}\nDetail: ${detail}\nTenor Pembayaran: ${tenor}\nButuh Dana Maksimal: ${maksimalText}`;
+    const message = `Dana Pinjaman : ${dana}\nKota/Kabupaten : ${kota}\nMerk, Tipe & Tahun : ${detail}\nTenor Pembayaran : ${tenor}\nButuh Dana Maksimal : ${maksimalText}\nTerimakasih`;
     
     const whatsappURL = `https://wa.me/6283824154821?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
@@ -44,9 +44,11 @@ function Kalkulator() {
         <div>
           <p className="text-xs md:text-3xl font-bold md:font-semibold my-1">Tenor Pembayaran</p>
           <div className="bg-[#E6E6E6] p-2 rounded-md">
-            <Dropdown label={tenor} inline className="w-full md:w-3/12 text-slate-700">
-              <DropdownItem onClick={() => setTenor('1 Tahun')}>1 Tahun</DropdownItem>
-              <DropdownItem onClick={() => setTenor('3 Tahun')}>3 Tahun</DropdownItem>
+            <Dropdown label={tenor} inline className="w-full px-2 md:w-3/12 text-slate-700">
+              <DropdownItem onClick={() => setTenor('12 Bulan')}>12 Bulan</DropdownItem>
+              <DropdownItem onClick={() => setTenor('18 Bulan')}>18 Bulan</DropdownItem>
+              <DropdownItem onClick={() => setTenor('24 Bulan')}>24 Bulan</DropdownItem>
+              <DropdownItem onClick={() => setTenor('32 Bulan')}>32 Bulan</DropdownItem>
             </Dropdown>
           </div>
         </div>
