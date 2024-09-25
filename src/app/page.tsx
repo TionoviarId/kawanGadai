@@ -385,7 +385,7 @@ export default function Home() {
           height={1000}
           className="w-[120px] md:w-[277px]"
         />
-        <p className="text-center text-xs md:text-2xl mb-5 md:w-10/12">
+        <p className=" text-white text-center text-xs md:text-2xl mb-5 md:w-10/12">
           Ruko Oregon TCR No 32, Jl. Raya Kota Wisata, Ciangsana, Gn Putri, Kab.
           bogor, KAB. BOGOR, GUNUNG PUTRI, JAWA BARAT, ID, 16968
         </p>
